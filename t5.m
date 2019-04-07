@@ -7,10 +7,10 @@ imds = imageDatastore(cz1,'LabelSource','foldernames','IncludeSubfolders',true,'
 
 tbl = countEachLabel(imds)
 
-%if ~exist('trainingSet','var') || ~exist('validationSet','var') || ~exist('testSet','var')
+if ~exist('trainingSet','var') || ~exist('validationSet','var') || ~exist('testSet','var')
     [trainingSet,validationSet, testSet] = splitEachLabel(imds, 0.8, 0.1, 0.1, 'randomized');
     save('mySets.mat','trainingSet','validationSet','testSet')
-%end
+end
 
 %conv1 = convolution2dLayer([20 3],38,'Stride',[1 1],'Padding',0);
 %conv1.Weights = gpuArray(single(randn([20 3 3 38])*0.00001));
@@ -35,7 +35,7 @@ layers = [
     crossChannelNormalizationLayer(3,'K',2)
     dropoutLayer
     %warstwa 8
-    fullyConnectedLayer(3)
+    fullyConnectedLayer(67)
     softmaxLayer
     classificationLayer
  ]
@@ -50,7 +50,7 @@ options = trainingOptions('sgdm', ...
     'MaxEpochs',100, ...
     'Shuffle','every-epoch', ...
     'ValidationData',validationSet, ...
-    'ValidationFrequency',50, ...
+    'ValidationFrequency',500, ...
     'ValidationPatience',5, ...
     'LearnRateSchedule','piecewise', ...
     'Verbose',false, ...

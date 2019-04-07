@@ -1,0 +1,6 @@
+walidacja jest bardzo czasoch³onna, mo¿na robiæ rzadziej mo¿e co 1000 albo 2000 iteracji
+wyliczanie zorocenter jest trochê czasoch³onne, przy powtarzaniu testów na tych samych danych mozna by osobno wyliczyæ, ¿eby nie traciæ czasu na wyliczanie tego samego za ka¿dym razem.
+sieæ siê chyba wolno uczy, po zmianie czêstoœci walidacji i sprawdzeniu, ze siê nadal za wolno uczy, mo¿na dodaæ wiêcej warst konwolucyjnych, ¿eby sieæ szybciej uczy³a siê zale¿noœci wy¿szych rzêdów.
+w klasach mamy nierówne liczby klatek, co bardzo widocznie wp³ywa na wyniki i tam gdzie jest du¿o klatek zbytnio zwiêksza siê prawdopodobieñstwo mo¿na zminejszyæ do 7000.
+nale¿y dokonaæ analizy podobieñstw wyników dla podobnych klas, wyci¹gn¹æ wnioski i mo¿e po³¹czyæ niekture klasy.
+tam gdzie jest wiêcej filmów z tej samej klasy mo¿na je wykluczyæ ze zbioru ucz¹cego i sprawdziæ dla nich wyniki.
