@@ -1,0 +1,14 @@
+klasyfikacja wielo-etykietowa:
+http://alpha.mini.pw.edu.pl/~mandziuk/PRACE/PPSN08.pdf
+https://en.wikipedia.org/wiki/Multi-label_classification
+https://medium.com/smileinnovation/training-neural-network-with-image-sequence-an-example-with-video-as-input-c3407f7a0b0f
+https://medium.com/smileinnovation/how-to-work-with-time-distributed-data-in-a-neural-network-b8b39aa4ce00
+https://ch.mathworks.com/help/deeplearning/ref/nnet.cnn.layer.lstmlayer.html
+https://towardsdatascience.com/deciding-optimal-filter-size-for-cnns-d6f7b56f9363
+https://stats.stackexchange.com/questions/196646/what-is-the-significance-of-the-number-of-convolution-filters-in-a-convolutional
+https://www.mathworks.com/help/deeplearning/ref/deepdreamimage.html
+https://stackoverflow.com/questions/49070464/convolutional-neural-networks-reasons-for-changing-image-data-range
+https://machinelearningmastery.com/gentle-introduction-mini-batch-gradient-descent-configure-batch-size/
+https://towardsdatascience.com/the-vanishing-gradient-problem-69bf08b15484
+https://machinelearningmastery.com/how-to-fix-vanishing-gradients-using-the-rectified-linear-activation-function/
+https://towardsdatascience.com/residual-blocks-building-blocks-of-resnet-fd90ca15d6ec
