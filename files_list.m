@@ -1,6 +1,8 @@
 s="";
 %tmpFiles=imds.Files;
 %tmpLabels=imds.Labels;
+%js={}
+listing=dir('@26.9deg_shutter in microsec/**/*.mat');
 k=1;
 files={};
 for i=1:length(listing)
