@@ -34,6 +34,9 @@ for i=1:length(labels)
     [B,ind]=maxk(values,2);
     b={[0 1 0]};
     cb(1:length(ind))=b;
+    if length(ind) ~= 2
+        ind(2)=ind(1);
+    end;
     newEdges = table(values(ind)', cb', 'VariableNames',{'Weight','Color'});
     G=addedge(G,char(labels(i)),keys(ind),newEdges);
     
